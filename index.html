@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="title"
+      content="Frontend Mentor | Newsletter sign-up form with success message"
+    />
+    <meta name="theme-color" content="hsl(235, 18%, 26%)" />
+    <meta name="msapplication-navbutton-color" content="hsl(235, 18%, 26%)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-web-app-status-bar-style" content="hsl(235, 18%, 26%)" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="_container">
+        <!-- Start Section -->
+        <section class="container__start start">
+          <picture class="start__picture">
+            <source
+              media="(min-width:900px)"
+              srcset="./assets/images/illustration-sign-up-desktop.svg"
+            />
+            <img
+              src="./assets/images/illustration-sign-up-mobile.svg"
+              alt="Sign up illustaration"
+            />
+          </picture>
+          <div class="start__conatainer--text">
+            <div class="start__text">
+              <h1 class="start__heading">Stay updated!</h1>
+              <p class="start__paragraph">
+                Join 60,000+ product managers receiving monthly updates on:
+              </p>
+              <ul class="start__list">
+                <li class="start__list__item">
+                  <img src="./assets/images/icon-list.svg" alt="list icon" />
+
+                  Product discovery and building what matters
+                </li>
+                <li class="start__list__item">
+                  <img src="./assets/images/icon-list.svg" alt="list icon" />
+
+                  Measuring to ensure updates are a success
+                </li>
+                <li class="start__list__item">
+                  <img src="./assets/images/icon-list.svg" alt="list icon" />
+                  And much more!
+                </li>
+              </ul>
+            </div>
+            <form action="/" class="start__form">
+              <div class="form__input">
+                <div class="input__top">
+                  <label for="email"> Email address </label>
+                  <span id="error"></span>
+                </div>
+
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="email@company.com"
+                />
+              </div>
+
+              <input
+                class="start__form__submit button"
+                type="submit"
+                value="Subscribe to monthly newsletter"
+              />
+            </form>
+          </div>
+        </section>
+
+        <!-- Success Section -->
+        <section class="container__success success">
+          <div class="success__top">
+            <img src="./assets/images/icon-success.svg" alt="icon success" />
+            <h1 class="top__heading">Thanks for subscribing!</h1>
+            <p class="top__paragraph">
+              A confirmation email has been sent to<strong id="succesEmail">
+                ash@loremcompany.com</strong
+              >
+              . Please open it and click the button inside to confirm your
+              subscription.
+            </p>
+          </div>
+          <div class="success__bottom">
+            <button
+              id="success__button"
+              onClick="returnToStart()"
+              class="button"
+            >
+              Dismiss message
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
