@@ -260,5 +260,6 @@ input:-webkit-autofill:active {
   }
   .success__bottom {
     margin-top: 2rem;
+    margin-bottom:1rem
   }
 }
